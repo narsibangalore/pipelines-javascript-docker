@@ -12,7 +12,7 @@ variables:
 
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '4ee73824-71be-4340-983f-5914cefc5f0e'
-  imageRepository: 'narsibangalorepipelinesjavascriptdocker01'
+  imageRepository: 'narsibangalorepipelinesjavascriptdocker'
   containerRegistry: 'demoakscluster01.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
