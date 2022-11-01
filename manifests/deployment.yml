@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: narsibangalorepipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: narsibangalorepipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: narsibangalorepipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: narsibangalorepipelinesjavascriptdocker 
+          image: demoakscluster01.azurecr.io/narsibangalorepipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
